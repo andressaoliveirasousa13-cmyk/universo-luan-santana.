@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Universo Luan Santana</title>
+
+    <style>
+        body {
+            background-color: #e6f2ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #001f4d, #168aad);
+            color: white;
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto 0;
+            padding: 25px;
+            border: 5px solid #002244;
+            border-radius: 12px;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        main {
+            background-color: white;
+            color: #003366;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        article {
+            display: flex;
+            gap: 18px;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f0f8ff;
+            border-radius: 10px;
+            border-left: 5px solid #168aad;
+        }
+
+        article img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+            color: #168aad;
+        }
+
+        button {
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            padding: 9px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        button:hover {
+            background-color: #003566;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            background-color: #003366;
+            padding: 15px;
+            max-width: 820px;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 500px) {
+            article {
+                flex-direction: column;
+            }
+
+            article img {
+                width: 100%;
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>💙 Universo Luan Santana 💙</h1>
+
+        <p>
+            Um cantinho especial para compartilhar todo o amor,
+            carinho e admiração pelo nosso eterno Luan Santana!
+        </p>
+
+        <p>✨ Música, emoção e muito amor! ✨</p>
+    </header>
+
+    <main>
+
+        <!-- PRIMEIRO POST -->
+        <article>
+
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/2Z9A7852.jpg"
+                alt="Luan Santana">
+
+            <div>
+                <h2>💙 Seja bem-vindo ao meu blog!</h2>
+
+                <p class="artigo-autor">
+                    Por: Andressa Sousa
+                </p>
+
+                <p>
+                    Olá, pessoal! Sejam todos bem-vindos ao Universo
+                    Luan Santana! Criei este espaço para compartilhar
+                    minha admiração por esse cantor incrível que
+                    encanta milhares de corações com sua voz e suas músicas.
+                    💙
+                </p>
+
+                <button>❤️ <span>0</span></button>
+                <button>🤣 <span>0</span></button>
+            </div>
+
+        </article>
+
+        <!-- SEGUNDO POST -->
+        <article>
+
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Luan_Santana_2011.jpg"
+                alt="Luan Santana em apresentação">
+
+            <div>
+                <h2>🎤 Um talento que encanta!</h2>
+
+                <p class="artigo-autor">
+                    Por: Andressa Sousa
+                </p>
+
+                <p>
+                    Luan Santana é um dos grandes nomes da música
+                    brasileira. Com seu talento, carisma e romantismo,
+                    conquistou fãs por todo o Brasil.
+                    Suas músicas fazem parte de muitas histórias de amor!
+                    💙
+                </p>
+
+                <button>❤️ <span>0</span></button>
+                <button>🤣 <span>0</span></button>
+            </div>
+
+        </article>
+
+        <!-- TERCEIRO POST -->
+        <article>
+
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Luan_Santana_no_Jequitimar.jpg"
+                alt="Luan Santana em evento">
+
+            <div>
+                <h2>💙 Amor de fã!</h2>
+
+                <p class="artigo-autor">
+                    Por: Andressa Sousa
+                </p>
+
+                <p>
+                    Ser fã é admirar, apoiar e vibrar com cada conquista.
+                    Luan Santana é muito mais que um cantor: é inspiração,
+                    emoção e alegria. Que venham muitos anos de música
+                    e sucesso!
+                </p>
+
+                <button>❤️ <span>0</span></button>
+                <button>🤣 <span>0</span></button>
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <p>💙 Feito com carinho por Andressa Sousa 💙</p>
+        <p>Universo Luan Santana - 2026</p>
+    </footer>
+
+    <script>
+
+        const botoes = document.querySelectorAll("button");
+
+        botoes.forEach(function (botao) {
+
+            let curtiu = false;
+
+            botao.addEventListener("click", function () {
+
+                let texto = botao.querySelector("span");
+
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
